@@ -1,0 +1,30 @@
+@import "./colors.scss";
+
+//BUTTON
+%defaultBtnProps {
+  color: inherit;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  &:focus {
+    outline: 0;
+  }
+  &:disabled {
+    cursor: not-allowed;
+  }
+}
+
+//LINK
+%defaultLinkProps {
+  text-decoration: none;
+  color: $affordance;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+//DISABLED
+%disabledProps {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

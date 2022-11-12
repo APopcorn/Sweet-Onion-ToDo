@@ -1,0 +1,12 @@
+.image__box {
+    border-radius: 0.75rem 0.75rem 0rem 0rem;
+    background-color: aqua;
+    height: 9rem;
+    width: inherit;
+    overflow: hidden;
+}
+
+.imgInBox {
+    width: inherit;
+    object-fit: scale-down;
+}

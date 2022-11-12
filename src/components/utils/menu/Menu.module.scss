@@ -1,0 +1,12 @@
+.test {
+  position: static;
+  display: flex;
+  font-size: large;
+  background-color: aquamarine;
+  height: 100vh;
+  width: 5rem;
+  border-radius: 0rem 0.75rem 0.75rem 0rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}

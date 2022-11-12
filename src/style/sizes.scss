@@ -1,0 +1,24 @@
+$maxContentWidth: 152rem;
+$headerHeight: 17.1rem; //Might need to be adjusted when all header components are in place
+$mobileFullHeaderHeight: 13rem; //Might need to be adjusted when all header components are in place
+$mobileReducedHeaderHeight: 4rem; //Header height when not logged in. Order menu, cart and search are not displayed
+$borderRadius: 4px; //input fields, boxes
+$borderRadiusSmall: 2px;
+$mobileMenuHeight: 57px;
+
+//ICONS
+$iconMediumSize: 2.4rem;
+
+//FORM
+$defaultFieldWith: 30rem;
+$defaultFieldHeight: 5.6rem; //MUI field height
+$thinFieldHeight: 4rem;
+
+//COLUMN WIDTHS
+$width-xs: 2rem;
+$width-s: 35rem;
+$width-m: 40rem;
+$width-l: 50rem;
+
+//TOAST-MESSAGE
+$max-width: 120rem;

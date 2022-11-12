@@ -1,0 +1,59 @@
+@import "./sizes.scss";
+@import "./spacing.scss";
+
+// MEDIA QUERYS
+@mixin medium-screen {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin small-screen {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin large-mobile {
+  @media (min-width: 400px) {
+    @content;
+  }
+}
+
+@mixin not-small-screen {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin touch-screen {
+  @media (hover: none) and (pointer: coarse) {
+    @content;
+  }
+}
+
+//COMPONENTS
+@mixin content-container {
+  max-width: $maxContentWidth;
+  margin: 0 auto;
+
+  /* Add medium (16px ) padding on sidens when page is as wide as content */
+  @media (max-width: calc(#{$maxContentWidth} + 3.2rem)) {
+    padding: 0 $spacing-m;
+  }
+}
+
+@mixin boxShadow($elevation: 1) {
+  /*
+  elevation 1 = drop down, navigation menu
+  elevation 2 = flyout, popup etc
+  elevation 3 = modal
+*/
+  @if $elevation == 1 {
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  } @else if $elevation == 2 {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  } @else if $elevation == 3 {
+    box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+      0px 9px 46px 8px rgba(0, 0, 0, 0.12);
+  }
+}

@@ -1,0 +1,36 @@
+@import "./colors.scss";
+
+$baseFontSize: 1.6rem;
+
+$fontSizeExtraLarge: 2.8rem; //e.g header title
+$fontSizeLarge: 2.2rem; //e.g page title
+$fontSizeMedium: 1.8rem; //e.g sub titles
+$fontSizeSmall: 1.4rem;
+
+$fontWeightLight: 300;
+$fontWeightNormal: 400;
+$fontWeightMedium: 500;
+
+%pageTitle {
+  font-size: $fontSizeLarge;
+  font-weight: $fontWeightMedium;
+}
+
+%sectionTitle {
+  font-size: $fontSizeMedium;
+  font-weight: $fontWeightMedium;
+}
+
+%primaryLink {
+  color: $primary;
+  font-size: $baseFontSize;
+  text-decoration: underline;
+  &:hover {
+    color: $primaryDark;
+  }
+}
+
+%defaultItemText {
+  font-style: italic;
+  font-weight: $fontWeightLight;
+}
