@@ -1,33 +1,43 @@
-import style from "./Menu.module.scss"
-import MenuOption from "./MenuOption"
+import style from "./Menu.module.scss";
+import MenuOption from "./MenuOption";
 
+import { NavLink } from "react-router-dom";
 
 const Menu = () => {
-
     return (
-        <div className={style.test}>
+        <nav className={style.test}>
+            <NavLink
+                to="/"
+                className={({ isActive }) =>
+                    isActive ? style.active : style.link
+                }
+            >
+                Home
+            </NavLink>
+            <NavLink
+                to="about"
+                className={({ isActive }) =>
+                    isActive ? style.active : style.link
+                }
+            >
+                {" "}
+                About{" "}
+            </NavLink>
+            <NavLink
+                to="login"
+                className={({ isActive }) =>
+                    isActive ? style.active : style.link
+                }
+            >
+                {" "}
+                Login{" "}
+            </NavLink>
 
-            <MenuOption />
-            <MenuOption />
-            <MenuOption />
+            {/* Inside Menu Look - should sit to the side - round - slide in an out
+            Contain - projects - The different/ resent projects open - or
+            different project pages - To home pages - logout - user settings */}
+        </nav>
+    );
+};
 
-            Inside Menu
-
-            Look
-                - should sit to the side
-                - round 
-                - slide in an out  
-
-            Contain 
-                - projects 
-                    - The different/ resent projects open 
-                    - or different project pages 
-                - To home pages 
-                - logout
-                - user settings  
-        </div>
-    )
-}
-
-
-export default Menu 
+export default Menu;
