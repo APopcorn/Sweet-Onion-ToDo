@@ -7,7 +7,7 @@ import LoginPage from "./pages/Login/LoginPage";
 import Error from "./pages/Error";
 import SharedLayout from "./pages/SharedLayout";
 
-import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
     return (

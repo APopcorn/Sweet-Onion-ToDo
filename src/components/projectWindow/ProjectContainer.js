@@ -2,11 +2,10 @@ import ImageBox from "./ImageBox";
 import ProjectTitle from "./ProjectTitle";
 import ProjectTextBox from "./ProjectTextBox";
 import { useState } from "react";
-import style from "./ProjectContainer.module.scss"
-
+import style from "./ProjectContainer.module.scss";
 
 const ProjectContainer = () => {
-    const [expand, setExpand] =  useState(false)  
+    const [expand, setExpand] = useState(false);
     return (
         <div className={style.project__container}>
             {expand ? (
@@ -15,11 +14,8 @@ const ProjectContainer = () => {
                 </div>
             ) : (
                 <>
-                    <>
-                        <ProjectTitle />
-                        <ImageBox />
-                    </>
-
+                    <ImageBox />
+                    <ProjectTitle />
                     <ProjectTextBox />
                 </>
             )}

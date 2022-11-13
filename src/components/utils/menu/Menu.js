@@ -1,5 +1,4 @@
 import style from "./Menu.module.scss";
-import MenuOption from "./MenuOption";
 
 import { NavLink } from "react-router-dom";
 
