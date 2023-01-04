@@ -1,4 +1,3 @@
-import img from "../../assets/img/Minesweeper.jpg";
 import img1 from "../../assets/img/gas.jpg";
 import style from "./ImageBox.module.scss"
 

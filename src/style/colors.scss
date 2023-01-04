@@ -1,43 +1,33 @@
-$primaryDark: #2a8494;
-$primary: #3aaabf;
-$primaryLight: #cfeaf1; //Menu primary color
-$primaryLight2: #f0f8fb;
-$darkGrey: #6f7173;
-$grey: #706f6d; //Text primary color
-$lightGrey: #acacac;
-$darkWhite: #e0e0e0;
+$primaryDark: #1a2122;
+$primaryGold: #eaf72e;
 $white: #ffffff;
-$lightWhite: #f4f4f4;
-$red: #ed0e0e;
-$green: #4bd332;
-$greenDark: #2d922d;
-$blue: #2c7cb2;
-$yellow: #ecb20f;
-$lightYellow: #f0d998;
-$orange: #ffa500;
-$black: #292929;
 
-//GENERAL
-$affordance: $primary;
-$error: $red;
-$warning: $yellow;
-$info: $primary;
-$success: $green;
 
-//TYPOGRAPHY
-$fontColor: $grey;
-$subfontColor: $lightGrey;
+$background: $primaryDark;
+$text: $primaryGold;
+$textWhite: $white;
 
-//COMPONENTS
-$navigationBar: $primaryLight;
-$navigationSubMenu: #eaf8fc;
-$iconColor: $primary;
-$highLight: $primaryLight; //e.g. hover on list items
-$borderColor: $grey; //e.g. list items bottom border
-$borderColorLight: $darkWhite; //e.g. Accordion item
-$contentBorder: $primaryLight;
-$pageSubMenu: #fafafa;
-$contentItemBgColor: #fafafae5;
+// //GENERAL
+// $affordance: $primary;
+// $error: $red;
+// $warning: $yellow;
+// $info: $primary;
+// $success: $green;
+
+// //TYPOGRAPHY
+// $fontColor: $grey;
+// $subfontColor: $lightGrey;
+
+// //COMPONENTS
+// $navigationBar: $primaryLight;
+// $navigationSubMenu: #eaf8fc;
+// $iconColor: $primary;
+// $highLight: $primaryLight; //e.g. hover on list items
+// $borderColor: $grey; //e.g. list items bottom border
+// $borderColorLight: $darkWhite; //e.g. Accordion item
+// $contentBorder: $primaryLight;
+// $pageSubMenu: #fafafa;
+// $contentItemBgColor: #fafafae5;
 
 /*
 EXPORTS TO USE IN JS FILES 
@@ -46,15 +36,7 @@ NOT WORKING WITH CRA v4.0.1 (26 nov 2020)
 using temporary solution with exports.module.scss
 */
 :export {
-  primaryDark: $primaryDark;
-  primary: $primary;
-  primaryLigt: $primaryLight;
-  green: $green;
-  darkGrey: $darkGrey;
-  grey: $grey;
-  lightGrey: $lightGrey;
-  darkWhite: $darkWhite;
-  white: $white;
-  lightWhite: $lightWhite;
-  iconColor: $iconColor;
+  background: $background;
+  text: $text;
+  textWhite: $textWhite;
 }

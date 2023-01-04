@@ -2,12 +2,18 @@ import { useState } from "react"
 import style from "./Search.module.scss"
 
 
-const Search = () => {
+const Search = ({ setElement }) => {
     const [text, setText] = useState("");
+
+    const onClickEvent = (event) => {
+        event.preventDefault();
+        setElement(text);
+        console.log(text);
+    }
 
     return (
         <div>
-            <form action="">
+            <form onSubmit={onClickEvent} >
                 <input 
                     className={style.input__text}
                     type="text" 
@@ -15,8 +21,6 @@ const Search = () => {
                     onChange={(e) => setText(e.target.value)}
                 />
             </form>
-
-            {/* Icon */}
         </div>
     )
 

@@ -1,0 +1,16 @@
+
+.userImgBox {
+    border-radius: 3.5rem;
+    height: 10rem;
+    width: 10rem;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.userImg {
+    position: relative;
+    object-fit: scale-down;
+    width: 14rem;
+    bottom: 3rem;
+    right: 2rem;
+}

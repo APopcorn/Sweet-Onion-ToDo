@@ -1,4 +1,6 @@
+@import "../style/colors.scss";
+
 .test {
-    background-color: rgb(86, 213, 171);
+    background-color: $background;
     display: flex;
 }

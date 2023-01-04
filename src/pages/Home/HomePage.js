@@ -1,4 +1,4 @@
-import Search from "../../components/utils/Search";
+import Search from "../../components/utils/Search/Search";
 import ProjectWindow from "../../components/projectWindow/ProjectWindow";
 import style from "./HomePage.module.scss";
 

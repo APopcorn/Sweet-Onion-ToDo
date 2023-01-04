@@ -1,8 +1,10 @@
+@import "../../../style/colors.scss";
+
 .test {
     position: static;
     display: flex;
     font-size: large;
-    background-color: aquamarine;
+    background-color: rgb(57 62 61);
     height: 100vh;
     width: 5rem;
     border-radius: 0rem 0.75rem 0.75rem 0rem;
@@ -17,9 +19,11 @@
 }
 
 .active {
-    color: red;
+    text-decoration: none;
+    color: $text;
 }
 
 .link {
-    color: black;
+    text-decoration: none;
+    color: $textWhite;
 }

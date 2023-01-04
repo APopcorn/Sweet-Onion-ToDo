@@ -1,6 +1,3 @@
-import ProjectWindow from "./components/projectWindow/ProjectWindow";
-import Menu from "./components/utils/menu/Menu";
-import Search from "./components/utils/Search";
 import HomePage from "./pages/Home/HomePage";
 import About from "./pages/About";
 import LoginPage from "./pages/Login/LoginPage";
