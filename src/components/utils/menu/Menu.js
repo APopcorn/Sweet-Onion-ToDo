@@ -19,8 +19,7 @@ const Menu = () => {
                     isActive ? style.active : style.link
                 }
             >
-                {" "}
-                About{" "}
+                About
             </NavLink>
             <NavLink
                 to="login"
@@ -28,8 +27,7 @@ const Menu = () => {
                     isActive ? style.active : style.link
                 }
             >
-                {" "}
-                Login{" "}
+                Login
             </NavLink>
 
             {/* Inside Menu Look - should sit to the side - round - slide in an out

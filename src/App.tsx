@@ -5,6 +5,7 @@ import Error from "./pages/Error";
 import SharedLayout from "./pages/SharedLayout";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ProjectDetails from "./components/projectPage/ProjectDetails";
 
 function App() {
     return (
@@ -16,6 +17,10 @@ function App() {
                             <Route index element={<HomePage />} />
                             <Route path="about" element={<About />} />
                             <Route path="login" element={<LoginPage />} />
+                            <Route
+                                path="projects/:projectId"
+                                element={<ProjectDetails />}
+                            />
                             <Route path="*" element={<Error />} />
                         </Route>
                     </Routes>
