@@ -24,7 +24,6 @@ const ProjectDetails = () => {
     return (
         <div>
             <CheckboxContainer />
-            <div> Add </div>
         </div>
     );
 };

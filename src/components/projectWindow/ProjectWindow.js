@@ -1,10 +1,12 @@
 import axios from "axios";
 import ProjectContainer from "./ProjectContainer";
+import AddProject from "./projectUtils/AddProject";
 import styles from "./ProjectWindow.module.scss";
 import { useState, useEffect } from "react";
 
 const ProjectWindow = () => {
     const [projects, setProjects] = useState([""]);
+    const [change, setChange] = useState(true);
 
     useEffect(() => {
         axios
@@ -16,7 +18,7 @@ const ProjectWindow = () => {
             .catch(function (error) {
                 console.log(error);
             });
-    }, []);
+    }, [change]);
 
     return (
         <div className={styles.test}>
@@ -32,7 +34,7 @@ const ProjectWindow = () => {
                     </div>
                 );
             })}
-            <div>Add</div>
+            <AddProject setChange={setChange} />
         </div>
     );
 };
